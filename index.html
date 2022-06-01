@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The 2021 Frontend Developer Crash Course</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+    <script> 
+    $(function(){
+      $("#footer").load("footer.html"); 
+      $("#header").load("header.html"); 
+    });
+    </script> 
+
+  </head>
+
+  <body>
+
+    <div id="header"></div>
+
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">Real Estate &amp; More</p>
+          <h1>Buy your real estate from the comfort of your home!</h1>
+
+          <div class="hero-cta">
+            <a href="Singup.html" class="primary-cta">Join Us Now!</a>
+            <!--<a href="#" class="watch-video-cta">
+              <img src="images/watch.svg" alt="Watch a video" />Watch a video -->
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="OtherResources/house.png"
+          class="hero-img"
+          alt="graphics"
+        />
+      </div>
+    </section>
+
+    <section class="features-section" id="features-section">
+      <div class="container">
+
+        <article class="wdwp">
+
+          We provide you the ability to buy your real estate from the comfort of your home!
+          With our trusted and rigestered real estate brokers you can buy your land with one click!
+
+        </article>
+
+        
+        <ul class="features-list">
+          <li>Get your real estate easily!</li>
+          <li>Trusted Real Estate brokers</li>
+          <li>We have brokers all around Saudi Arabia</li>
+        </ul>
+
+        <img src="MyResources/Screenshot1.png" alt="Our Activities" />
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact Us</h2>
+
+          <form action="">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Send message"
+            />
+          </form>
+        </div>
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15156.70642935102!2d42.5602441!3d18.2477238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfecb4c77f4aa12ef!2sKing%20Khalid%20University!5e0!3m2!1sen!2sus!4v1653756858088!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+
+    <!--footer, original!-->
+
+    <div id="footer"></div>
